@@ -1,0 +1,121 @@
+<!-- <style>
+    #selected-categories {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        min-height: 30px;
+        margin-bottom: 10px;
+        font-style: italic;
+        color: gray;
+    }
+    .dropdown-menu {
+        max-height: 200px;
+        overflow-y: auto;
+    }
+</style> -->
+
+
+<% layout("/layouts/boiletplate") %>
+<div class="row">
+    <div class="col-8 offset-2">
+        <br>
+        <h3>Create a new listing</h3>
+        <form action="/listings" method="POST" class="needs-validation" enctype="multipart/form-data" novalidate >
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" placeholder="Add a catchy title" name="listing[title]" id="title" class="form-control" required>
+                <div class="valid-feedback">That's a catchy title</div>
+                <div class="invalid-feedback">Enter a valid title</div>
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea name="listing[description]" id="description" class="form-control" required></textarea>
+                <div class="invalid-feedback">Enter a valid description</div>
+                <div class="valid-feedback">Look's good</div>
+            </div>
+
+            <!-- <div class="mb-3">
+                <label for="categories" class="form-label">Categories</label>
+                <div id="selected-categories">
+                    No categories selected
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Select Categories
+                    </button>
+                    <ul class="dropdown-menu" id="categories-dropdown">
+                        <li><a class="dropdown-item" href="#" data-value="Mountains">Mountains</a></li>
+                        <li><a class="dropdown-item" href="#" data-value="Farms">Farms</a></li>
+                        <li><a class="dropdown-item" href="#" data-value="Rooms">Rooms</a></li>
+                        <li><a class="dropdown-item" href="#" data-value="Beach">Beach</a></li>
+                        <li><a class="dropdown-item" href="#" data-value="Historical">Historical</a></li>
+                        <li><a class="dropdown-item" href="#" data-value="Camping">Camping</a></li>
+                        <li><a class="dropdown-item" href="#" data-value="Amazing view">Amazing view</a></li>
+                        <li><a class="dropdown-item" href="#" data-value="Snow area">Snow area</a></li>
+                        <li><a class="dropdown-item" href="#" data-value="Top cities">Top cities</a></li>
+                        <li><a class="dropdown-item" href="#" data-value="Amazing pools">Amazing pools</a></li>
+                        <li><a class="dropdown-item" href="#" data-value="Spiritual">Spiritual</a></li>
+                    </ul>
+                </div>
+                <input type="hidden" id="categories-hidden" name="listing[categories]">
+            </div> -->
+            
+
+            <div class="mb-3">
+                <label for="image" class="form-label">Image</label>
+                <input type="file" name="listing[image]" id="image" class="form-control">
+            </div>
+            <div class="row">
+                <div class="mb-3 col-md-4">
+                    <label for="price" class="form-label">Price</label>
+                    <input placeholder="1500" name="listing[price]" id="price" class="form-control" required>
+                    <div class="invalid-feedback">Enter a valid price</div>
+                </div>
+                <div class="mb-3 col-md-8">
+                    <label for="location" class="form-label">Location</label>
+                    <input type="text" placeholder="Jaipur, rajasthan" name="listing[location]" id="location" class="form-control" required>
+                    <div class="invalid-feedback">Enter a valid location</div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="country" class="form-label">Country</label>
+                <input type="text" placeholder="India" name="listing[country]" id="country" class="form-control" required>
+                <div class="invalid-feedback">Enter a valid country</div>
+            </div><br><br>
+            <button class="btn btn-dark add-btn">Add</button>
+        </form>
+        <br><br>
+    </div>
+    </div>
+<!-- 
+    <script>
+        const dropdownItems = document.querySelectorAll('#categories-dropdown .dropdown-item');
+        const display = document.getElementById('selected-categories');
+        const hiddenInput = document.getElementById('categories-hidden');
+    
+        // Array to hold selected categories
+        let selectedCategories = [];
+    
+        // Handle dropdown item click
+        dropdownItems.forEach(item => {
+            item.addEventListener('click', (event) => {
+                event.preventDefault();
+                const value = event.target.getAttribute('data-value');
+    
+                // Add to selected list if not already present
+                if (!selectedCategories.includes(value)) {
+                    selectedCategories.push(value);
+                }
+    
+                // Update visible list
+                display.textContent = selectedCategories.length
+                    ? selectedCategories.join(', ')
+                    : 'No categories selected';
+    
+                // Update hidden input for form submission
+                hiddenInput.value = selectedCategories.join(',');
+            });
+        });
+    </script>
+     -->

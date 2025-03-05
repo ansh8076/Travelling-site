@@ -6,7 +6,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url("/assets/background.png") !important;
+    background: url("/assets/background.png") !important;
     background-size: cover !important; /* Makes the image cover the whole screen */
     background-position: center !important; /* Centers the image */
     background-repeat: no-repeat !important; /* Prevents image repetition */

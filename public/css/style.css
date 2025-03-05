@@ -7,9 +7,9 @@ body{
     flex-direction: column;
     min-height: 100vh;
     background-image: url("https://res.cloudinary.com/drqywg2wl/image/upload/v1741193144/AdobeStock_135628942_Preview_txz6tx.eps") !important;
-    background-size: cover !important; /* Makes the image cover the whole screen */
-    background-position: center !important; /* Centers the image */
-    background-repeat: no-repeat !important; /* Prevents image repetition */
+     /* background-size: cover !important;  */
+    /* background-position: center !important; 
+    background-repeat: no-repeat !important;  */
 }
 .container{
     flex: 1;

@@ -6,24 +6,20 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url("/assets/background.jpg") !important;
+    background-image: url("/assets/background.png") !important;
     background-size: cover !important; /* Makes the image cover the whole screen */
     background-position: center !important; /* Centers the image */
     background-repeat: no-repeat !important; /* Prevents image repetition */
 }
-/* .container{
+.container{
     flex: 1;
-} */
+}
 /* navbar */
 .navbar{
     padding: 10px 20px;
     background-color: #fff;
 }
 /* nav-icon */
-.fa-compass{
-    color: #fe424d;
-    font-size: 2rem;
-}
 .nav-link {
     color: black !important;
 }

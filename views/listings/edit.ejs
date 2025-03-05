@@ -2,13 +2,13 @@
 <br>
     <div class="row">
         <div class="col-8 offset-2">
-    <h3>Edit your listing</h3>
+    <h3>Edit Dish</h3>
     <form method="POST" action="/listings/<%=listing._id%>?_method=PUT" novalidate class="needs-validation" enctype="multipart/form-data">
         <div class="mb-3">
-            <label for="title" class="form-label">Title</label>
+            <label for="title" class="form-label">Name</label>
             <input type="text" value="<%=listing.title%>" name="listing[title]" id="title" class="form-control" required>
-            <div class="valid-feedback">That's a catchy title</div>
-            <div class="invalid-feedback">Enter a valid title</div>
+            <div class="valid-feedback">That's look interesting</div>
+            <div class="invalid-feedback">Enter a valid dish</div>
         </div>
         <div class="mb-3">
             <label for="description" class="form-label">Description</label>

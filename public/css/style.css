@@ -121,3 +121,8 @@ body{
     padding-left: 0;
     padding-right: 0;
 }
+.logo {
+    width: 50px;  /* Adjust the size as needed */
+    height: auto;
+    margin-right: 15px;
+}

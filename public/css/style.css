@@ -11,9 +11,9 @@ body{
     background-position: center !important; /* Centers the image */
     background-repeat: no-repeat !important; /* Prevents image repetition */
 }
-.container{
+/* .container{
     flex: 1;
-}
+} */
 /* navbar */
 .navbar{
     padding: 10px 20px;

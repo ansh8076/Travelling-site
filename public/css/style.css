@@ -115,7 +115,7 @@ body{
 }
 .edit-and-delete{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .show-card{
     padding-left: 0;
